@@ -36,7 +36,6 @@ Automation is developed with:
  - BDD (Behavior-Driven Development) - Development strategy
  - Screenplay pattern - Design pattern that applies SOLID principles
  - Gradle - Project and Dependency manager
- - Selenium Web Driver - Tool to automate actions in web browsers
  - Cucumber - Framework to automate BDD tests
  - Serenity BDD - Framework, Open source library for report generation
  - Gherkin - Business-readable domain specific language (DSL)
