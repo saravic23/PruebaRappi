@@ -65,12 +65,6 @@ The complete structure of the automation project is as follows:
 + exceptions
     Classes that catch exceptions and throw custom messages when automation fails due to it is not found what was expected.
 
-+ integrations
-    Classes that enable connection to services.
-
-+ interactions
-    Classes that perform low-level actions, such as select a text field, search a case, among others.
-
 + models
     Classes with which the data models are built using the builder pattern.
 
@@ -79,9 +73,6 @@ The complete structure of the automation project is as follows:
 
 + tasks
     Classes that perform high-level actions, such as login in the application, enter data into a form, etc.
-
-+ userinterfaces
-    Classes where the elements of the user interface are mapped throw Xpaths.
 
 + utils
     Classes that contain common functionalities, such as files handling (Excel or XML), or string handling.
@@ -99,16 +90,11 @@ Classes to execute the automations with the scenarios indicated in the equivalen
 
 * ```src/test/resources/```
 ```
-
-+ data_driven
-    Files to interact with the application through automation.
-
-+ driver
-    Chrome drivers used to run automation.
-
 + features
     The project features are found here.
 ```
+## Vocabulary 📚
+---
 
 ### BDD
 BDD is used as an automation framework for the automation of test scenarios, the idea is to write the tests before writing the source code, but instead of unit tests, what is done is to write tests that verify that the behavior of the Application is correct from a business point of view. After writing the tests, the source code of the functionality that makes these tests pass is written.
