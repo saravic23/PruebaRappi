@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="consumption services" skipped="0" tests="3" time="3.75" timestamp="2021-10-11 02:13:56"><testcase name="service consumption get successful"/><testcase name="service consumption register successful"/><testcase name="service consumption delete successful"/></testsuite>

@@ -1,0 +1,48 @@
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        dependencies {
+            classpath("net.serenity-bdd:serenity-gradle-plugin:2.4.34")
+        }
+    }
+}
+
+apply plugin:'java'
+apply plugin:'idea'
+apply plugin:'net.serenity-bdd.aggregator'
+
+ext{
+        serenityVersion = '2.0.84'
+        serenityCucumberVersion = '1.9.48'
+    }
+
+dependencies {
+
+    implementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-rest-assured:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
+    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityVersion"
+    implementation 'junit:junit:4.13.1'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.2'
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.1.Final'
+    implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.1.Final'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.15'
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.7'
+    implementation group: 'com.google.guava', name: 'guava', version: '23.6-jre'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+    implementation group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.9'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.6.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.6.1'
+
+}
